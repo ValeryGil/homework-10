@@ -11,8 +11,7 @@ export const personReducer = (store = {}, action) => {
     case LOGOUT:
       return {
         ...store,
-        payload: null,
-        token: '',
+        token: action.payload,
       }
 
     case GET_USER_ID:

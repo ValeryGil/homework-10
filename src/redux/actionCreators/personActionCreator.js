@@ -36,6 +36,7 @@ export const signUpQuery = ({ email, password, successCb, errorCb }) => async (d
 export const logOutUser = () => (dispatch) => {
   dispatch({
     type: LOGOUT,
+    payload: '',
   })
 }
 
